@@ -1,0 +1,24 @@
+import  matplotlib.pyplot as mlt
+import matplotlib
+subject=['os','toc','cbnst','sdlc','dbms','english']
+marks=[74,60,65,73,69,77]
+ct_marks=[56,78,95,67,78,88]
+ct2_marks=[56,78,67,98,45,74]
+ct3_marks=[64,56,75,85,96,48]
+mlt.style.use('seaborn')
+matplotlib.rcParams["font.family"]='fantasy'
+j=mlt.plot(subject,marks,label='Shah Alam performance',color='r',marker='o',
+           linestyle='--',linewidth=1)
+j=mlt.plot(subject,ct_marks,color='y',label='ct1_marks',marker='o')
+j=mlt.plot(subject,ct2_marks,color='m',label='ct2_marks',marker='o')
+j=mlt.plot(subject,ct3_marks,color='b',label='ct3_marks',marker='o')
+mlt.xlabel('subject')
+mlt.legend(loc='upper left')
+mlt.ylim(0,100)
+ct3_marks=min(ct3_marks)
+mlt.grid(True,color='b',linestyle='-.')
+mlt.annotate('Lower value',xy=(78,85))
+mlt.savefig(r'C:\Users\shah alam\Pictures\Saved Pictures\Save Pictures.pdf',dpi=500,facecolor='blue')
+mlt.ylabel('marks')
+mlt.title('academic performance')
+mlt.show()
