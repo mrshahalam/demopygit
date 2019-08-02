@@ -1,0 +1,9 @@
+#df.iloc[2:4,5]---------[row_start:row_end,column_name]
+#df.loc[:,'TOTAL']
+#df.loc[:4,'HUMANS VALUES':'ENGLISH LAB']
+#df['HUMANS VALUES']=1------------fill same value in whole column...
+#f = lambda x:x*2                                      |
+#df['HUMANS VALUES'] = df['HUMANS VALUES'].apply(f)    |
+#df.sort_values(by='TOTAL').............ascending order 
+#df.sort_values(by='TOTAL',ascending=False).........descending_order
+#df['TOTAL']>800
